@@ -1,0 +1,22 @@
+{
+  "files": [
+    "./src/components/Custominput.vue",
+    "./src/components/Checkbox.vue",
+    "./src/components/RadioButton.vue",
+    "./src/views/RegistrationComplete.vue",
+    "./src/views/Authorisation.vue",
+    "./src/views/MainPage.vue",
+    "./src/views/Registration.vue",
+    "./src/views/ErrorPackage.vue",
+    "./src/views/Login.vue",
+    "./src/views/RestorePassword.vue",
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
