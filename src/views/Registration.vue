@@ -68,6 +68,7 @@ const uploadFile = (e) => {
     review.errorPhotoViewPer = 'Неверный формат файла!';
     review.photo_look = null;
     review.photo = null;
+    review.maxlen = null;
   }
   // console.log(review.photo);
 }
