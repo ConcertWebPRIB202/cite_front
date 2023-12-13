@@ -68,6 +68,7 @@ const uploadFile = (e) => {
     review.errorPhotoViewPer = 'Неверный формат файла!';
     review.photo_look = null;
     review.photo = null;
+    review.maxlen = null;
   }
   // console.log(review.photo);
 }
@@ -116,10 +117,19 @@ const togglePhoto = () => {
 }
 
 const passAlpha = (value) => {
-  if(!/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g.test(value)){
-    return false
-  } else {
+  // if(!/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g.test(value)){
+  //   return false
+  // } else {
+  //   return true
+  // }
+  if(!value){
     return true
+  } else {
+    if(!/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{8,}/g.test(value)){
+      return false
+    } else {
+      return true
+    }
   }
 }
 
