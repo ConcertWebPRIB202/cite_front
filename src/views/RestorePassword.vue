@@ -132,19 +132,19 @@ export default {
 
 .success {
 	width: 200px;
-	margin: 25px 175px 0px 185px;
+	margin: 25px 175px 0px 285px;
 }
 
 .incorrect-email {
   margin-top: 25px;
-  margin-left: 120px;
+  margin-left: 225px;
   color: #DA0038;
   font-size: 16px;
 }
 
 .incorrect-code {
   margin-top: 25px;
-  margin-left: 120px;
+  margin-left: 225px;
   color: #DA0038;
   font-size: 16px;
 }
@@ -164,7 +164,7 @@ export default {
 }
 
 .restore {
-	margin: 20% auto auto auto;
+	margin: 15% auto auto auto;
   /* margin-top: 200px; */
   font-family: sans-serif;
   border-radius: 30px;
@@ -277,7 +277,7 @@ export default {
 }
 
 .incorrect-data2 {
-  margin-left: 377px;
+  margin-left: 477px;
 }
 
 .check-login {
