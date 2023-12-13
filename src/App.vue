@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="ma overflow-hidden submain-background-color">
+  <div class="ma overflow-hidden z-index">
     <div class="container ma">
       <router-view></router-view>
     </div>
@@ -16,5 +16,7 @@
 </template>
 
 <style scoped>
-
+.z-index{
+  z-index: 0;
+}
 </style>

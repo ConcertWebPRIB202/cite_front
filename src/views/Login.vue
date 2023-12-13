@@ -87,7 +87,38 @@ export default {
 </template>
 
 <style scoped>
+.success-text {
+	padding-top: 20px;
+	padding-left: 10px;
+	text-align: center;
+	color: white;
+	font-size: 21px;
+}
 
+.success {
+	width: 200px;
+	margin: 25px 175px 0px 285px;
+}
+.restore {
+	margin: 15% auto auto auto;
+  /* margin-top: 200px; */
+  font-family: sans-serif;
+  border-radius: 30px;
+  /* margin: auto; */
+  max-width: 750px;
+  max-height: 560px;
+  background-color: #171717;
+  display: flex;  
+  flex-direction: column;
+}
+
+.restore .header {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
 /* .main-background-color{
   background: #FFFFFF !important;
 } */
@@ -126,7 +157,7 @@ export default {
   color:#444444;
 }
 .login {
-  margin: 20% auto auto auto;
+  margin: 15% auto auto auto;
   font-family: sans-serif;
   border-radius: 30px;
   /* margin: auto; */
@@ -186,13 +217,13 @@ export default {
 
 .incorrect-data {
   margin-top: 25px;
-  margin-left: 120px;
+  margin-left: 225px;
   color: #DA0038;
   font-size: 16px;
 }
 
 .incorrect-data2 {
-  margin-left: 377px;
+  margin-left: 477px;
 }
 
 .check-login {
