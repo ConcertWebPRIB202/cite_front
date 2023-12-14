@@ -141,6 +141,23 @@ const checkCheckbox = (value) => {
   }
 }
 
+const passAlphaConfirm = (value) => {
+  if(!value){
+    return true
+  } else {
+    if (value == passwordField.value) {
+      return true
+    } else {
+      return false
+    }
+  }
+  // if (value == passwordField.value) {
+  //   return true
+  // } else {
+  //   return false
+  // }
+}
+
 const rules = computed(() => ({
   nameField: {
     minLength: helpers.withMessage('Логин менее 8-ми символов!', minLength(8)),
@@ -152,9 +169,10 @@ const rules = computed(() => ({
     required: helpers.withMessage('Пароль не введен!', required)
   },
   passwordFieldConfirm: {
-    sameAsPassword: helpers.withMessage('Пароли не совпадают!', sameAs(passwordField.value)),
+    // sameAsPassword: helpers.withMessage('Пароли не совпадают!', sameAs(passwordField.value)),
     // minLength: helpers.withMessage('Пароль менее 8-ми символов!', minLength(8)),
     // passwordField: helpers.withMessage('Пароль введен некорректно!', passAlpha),
+    passwordFieldConfirm: helpers.withMessage('Пароли не совпадают!', passAlphaConfirm),
     required: helpers.withMessage('Пароль не введен!', required)
   },
   emailField: {
