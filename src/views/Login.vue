@@ -22,7 +22,7 @@ export default {
         });
 
         const response = await instanceUrl.post('/auth/login', {
-          email: this.login,
+          login: this.login,
           password: this.password
         });
 
