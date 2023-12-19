@@ -12,7 +12,7 @@ const app = createApp(App)
 
 router.beforeEach((to, from, next) => {
 
-    if (to.path === '/login' || to.path === '/login') 
+    if (to.path === '/login' || to.path === '/restorePassword') 
     {
         document.body.style.background = 'url(src/assets/shaman-image.jpg) no-repeat';
         document.body.style.position = 'static';

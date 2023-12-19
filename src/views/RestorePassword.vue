@@ -18,8 +18,13 @@ export default {
 
 	methods: {
 		continues () {
-			this.step = 2;
-			console.log("Button  clicked!");
+			if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.login)) {
+				this.step = 2;
+				this.isVisibleIncorrectData = false;
+			}
+			else {
+				this.isVisibleIncorrectData = true;
+			}
     },
 		newPasswords2 () {
 			if (this.code != this.successCode) {
@@ -271,7 +276,7 @@ export default {
 
 .incorrect-data {
   margin-top: 25px;
-  margin-left: 120px;
+  margin-left: 245px;
   color: #DA0038;
   font-size: 16px;
 }
