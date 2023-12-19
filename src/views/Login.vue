@@ -87,20 +87,21 @@ export default {
 </template>
 
 <style scoped>
+
 .success-text {
-	padding-top: 20px;
-	padding-left: 10px;
-	text-align: center;
-	color: white;
-	font-size: 21px;
+  padding-top: 20px;
+  padding-left: 10px;
+  text-align: center;
+  color: white;
+  font-size: 21px;
 }
 
 .success {
-	width: 200px;
-	margin: 25px 175px 0px 285px;
+  width: 200px;
+  margin: 25px 175px 0px 285px;
 }
 .restore {
-	margin: 15% auto auto auto;
+  margin: 15% auto auto auto;
   /* margin-top: 200px; */
   font-family: sans-serif;
   border-radius: 30px;
@@ -119,16 +120,9 @@ export default {
   margin-top: 7px;
   margin-bottom: 7px;
 }
-/* .main-background-color{
-  background: #FFFFFF !important;
-} */
-/* .login-body{
-  position: absolute;
-  height: 100ch;
-  width: 1920px;
-  background: url(../assets/shaman-image.jpg) no-repeat;
-  background-size: cover;
-} */
+.empty-auth {
+  height: 100px;
+}
 
 .eye {
   cursor: pointer;
@@ -157,12 +151,13 @@ export default {
   color:#444444;
 }
 .login {
-  margin: 15% auto auto auto;
+  /* margin-top: 200px; */
   font-family: sans-serif;
   border-radius: 30px;
   /* margin: auto; */
-  max-width: 750px;
-  max-height: 560px;
+  margin: 15%  auto auto auto;
+  width: 650px;
+  height: 460px;
   background-color: #171717;
   display: flex;  
   flex-direction: column;
@@ -172,12 +167,12 @@ export default {
   color: white;
   font-size: 40px;
   text-align: center;
-  margin-top: 7px;
+  margin-top: 22px;
   margin-bottom: 7px;
 }
 
 .line {
-  width: 750px;
+  width: 650px;
   border-top: 3px solid #444444;
   margin-bottom: 20px;
 }
@@ -186,6 +181,9 @@ export default {
   position: relative;
   display: flex;
   flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 4%;
 }
 
 .login-data .img {
@@ -204,6 +202,7 @@ export default {
   padding: 0 50px;
   border-radius: 30px;
   background-color: #444444;
+  margin-right: 8%;
 }
 
 .login-input text {
@@ -216,14 +215,15 @@ export default {
 }
 
 .incorrect-data {
-  margin-top: 25px;
-  margin-left: 225px;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding-right: 35px;
   color: #DA0038;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .incorrect-data2 {
-  margin-left: 477px;
+  margin-left: 435px;
 }
 
 .check-login {
@@ -234,13 +234,110 @@ export default {
 .go-login {
   cursor: pointer;
   border: none;
-  margin-left: 55px;
-  margin-top: 10px;
+  margin-top: 30px;
   border-radius: 30px;
   width: 167px;
   height: 50px;
   font-size: 25px;
   color: white;
   background-color: #444444;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+@media (max-width: 1440px){
+
+  .login {
+    height: 460px;
+    margin: 15%  auto auto auto;
+  }
+  .authorize {
+    margin-top: 20px;
+  }
+  .wrapper {
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .login-input {
+    padding: 0 36px;
+  }
+  .login-link {
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 768px){
+  
+  
+  .login-data{
+    margin-left: 0%;
+  }
+  .line {
+    width: 640px;
+  }
+  .incorrect-data {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .login {
+  /* margin-top: 200px; */
+  font-family: sans-serif;
+  border-radius: 30px;
+  /* margin: auto; */
+  margin: 50%  auto auto auto;
+  width: 660px;
+  height: 550px;
+  background-color: #171717;
+  display: flex;  
+  flex-direction: column;
+  }
+  .check-login {
+  display: block;
+  text-align: center;
+  }
+  .img {
+    display: none;
+  }
+  .login-input{
+    margin-left: 70px;
+    width: 520px;
+    margin-top: 30px;
+  }
+  .eye {
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+  .go-login {
+    margin-top: 20px;
+    margin-left: 0px;
+    
+  }
+  .login-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .login-link {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  .wrapper {
+    padding-top: 413px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .restore {
+    height: 460px;
+  }
 }
 </style>

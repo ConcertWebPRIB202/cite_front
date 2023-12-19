@@ -59,13 +59,13 @@ export default {
     <div v-if="step == 1" class="restore">
         <div class="restore header">Восстановление пароля</div>
         <div class="line"></div>
-				<div class="text">Введите почту, на которую зарегистрирован ваш аккаунт</div>
+				<div class="text">Введите почту, на которую был зарегистрирован ваш аккаунт</div>
 				<div class="login-data">
 					<img alt="man img" class="img" src="@/assets/man.svg" />
 					<input v-bind:class="!isVisibleIncorrectData ? 'login-input' : 'login-input redBorder'" v-model="login" placeholder="E-mail">
 				</div>
 				<div class="check-login">
-					<div class="incorrect-data" v-if="isVisibleIncorrectData">Нет пользователя с таким Email</div>
+					<div class="incorrect-data" v-if="isVisibleIncorrectData">Неправильный e-mail</div>
 					<div class="incorrect-data2" v-if="!isVisibleIncorrectData"></div>
 					<button class="go-login" v-on:click="continues">Продолжить</button>
 				</div>
@@ -163,9 +163,11 @@ export default {
 
 .text {
 	color: white;
-	font-size: 21px;
+	font-size: 25px;
 	padding-left: 20px;
 	padding-bottom: 15px;
+	width: 400px;
+	margin-left: 8%;
 }
 
 .restore {
@@ -174,11 +176,12 @@ export default {
   font-family: sans-serif;
   border-radius: 30px;
   /* margin: auto; */
-  max-width: 750px;
-  max-height: 560px;
+  width: 650px;
+  height: 460px;
   background-color: #171717;
   display: flex;  
   flex-direction: column;
+  
 }
 
 .restore .header {
@@ -187,6 +190,8 @@ export default {
   text-align: center;
   margin-top: 7px;
   margin-bottom: 7px;
+  height: 98px;
+  justify-content: center;
 }
 
 .eye {
@@ -208,7 +213,7 @@ export default {
 .login-link {
   color:#FFFFFF;
   margin: 0px 20px 0px 40px;
-  font-size: 17px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -236,7 +241,7 @@ export default {
 }
 
 .line {
-  width: 750px;
+  width: 650px;
   border-top: 3px solid #444444;
   margin-bottom: 20px;
 }
@@ -245,6 +250,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: row;
+  margin-left: 4%;
 }
 
 .login-data .img {
@@ -263,6 +269,7 @@ export default {
   padding: 0 50px;
   border-radius: 30px;
   background-color: #444444;
+  margin-right: 8%;
 }
 
 .login-input text {
@@ -276,9 +283,10 @@ export default {
 
 .incorrect-data {
   margin-top: 25px;
-  margin-left: 245px;
+  margin-left: 10%;
   color: #DA0038;
-  font-size: 16px;
+  font-size: 22px;
+  margin-right: 29%;
 }
 
 .incorrect-data2 {
@@ -293,13 +301,14 @@ export default {
 .go-login {
   cursor: pointer;
   border: none;
-  margin-left: 55px;
+  margin-left: -58px;
   margin-top: 10px;
   border-radius: 30px;
-  width: 167px;
-  height: 50px;
+  /* width: 167px;
+  height: 50px; */
   font-size: 25px;
   color: white;
   background-color: #444444;
+  padding: 10px 20px;
 }
 </style>
