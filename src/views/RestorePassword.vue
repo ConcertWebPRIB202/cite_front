@@ -137,7 +137,7 @@ export default {
 
 .success {
 	width: 200px;
-	margin: 25px 175px 0px 285px;
+	margin: 25px 175px 0px 250px;
 }
 
 .incorrect-email {
@@ -149,14 +149,16 @@ export default {
 
 .incorrect-code {
   margin-top: 25px;
-  margin-left: 225px;
+  margin-left: 100px;
+  margin-right: 150px;
   color: #DA0038;
   font-size: 16px;
 }
 
 .incorrect-password {
   margin-top: 25px;
-  margin-left: 175px;
+  margin-left: 100px;
+  margin-right: 190px;
   color: #DA0038;
   font-size: 16px;
 }
@@ -310,5 +312,13 @@ export default {
   color: white;
   background-color: #444444;
   padding: 10px 20px;
+}
+
+@media (max-width: 768px){
+ .restore{
+	margin: 50%  auto auto auto;
+ }
+ 
+
 }
 </style>
